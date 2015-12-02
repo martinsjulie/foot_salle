@@ -55,7 +55,11 @@ h1{
   margin-top: 20px;
   font-family: "Helvetica";
 }
+.NomTeam{
+  width: 100%;
+}
 .teamTitre{
   text-transform: uppercase;
   font-weight: 900;
+  margin-left: 34%;
 }
