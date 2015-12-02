@@ -12,9 +12,6 @@ label{
   color: white;
   width: 10%;
 }
-td{
-  background-color: green;
-}
 input{
   background-color:#E7F3FE;
 }
@@ -23,8 +20,8 @@ button{
   font-weight: 900;
   width: 100%;
   height: 20px;
-  background-color: rgba(0, 0, 0, 1);
-  border: 1px solid #E7F3FE;
+  background-color: rgba(0, 128, 128, 1);
+  border: 0;
 }
 p{
   height: 15px;
@@ -41,8 +38,7 @@ h1{
   -webkit-margin-before:0;
   -webkit-margin-after:0;
   text-align: center;
-  color: black;
-  text-shadow: 2px 2px 8px grey;
+  color: white;
   font-size: 25px;
 }
 .en_tete{
@@ -50,14 +46,14 @@ h1{
   height: 50px;
   padding-top: 15px;
   font-family: "Helvetica";
-  background-color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 128, 128, 1);
   margin-bottom: 25px;
 }
 .team{
   width: 17.3%;
   height: 420px;
   float: left;
-  background-color: rgba(0, 0, 0, 0.65);;
+  background-color: rgba(0, 128, 128, 0.65);;
   padding: 10px;
   margin-left: 15px;
   margin-top: 20px;
