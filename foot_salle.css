@@ -57,7 +57,7 @@ h1 {
   width: 17.3%;
   height: 420px;
   float: left;
-  background-color: rgba(0, 0, 0, 0.65);;
+  background-color: rgba(0, 0, 0, 0.65);
   padding: 10px;
   margin-left: 15px;
   margin-top: 20px;
@@ -73,19 +73,18 @@ h1 {
 }
 #terrain {
   margin-top: 15px;
-  margin-left: 10%;
-  width: 80%;
+  width: 33%;
   height: 40px;
   float: left;
   text-align: center;
   margin-bottom: 5px;
 }
 .terrain_blue {
-  background-color: rgba(0, 128, 128, 0.65);;
+  background-color: rgba(0, 128, 128, 0.65);
 }
 .terrain_red {
-  background-color: rgba(128, 20, 20, 0.65);;
+  background-color: rgba(128, 20, 20, 0.65);
 }
 .terrain_green {
-  background-color: rgba(20, 128, 20, 0.65);;
+  background-color: rgba(20, 128, 20, 0.65);
 }
