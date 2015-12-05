@@ -15,7 +15,7 @@
   <div class="en_tete">
     <h1>TEAM TIME!</h1>
   </div>
-  
+
   <a href="Battlefield_blue.html">
     <div id="terrain" class="terrain_blue">
       <p>Check the Blue Battlefiel!</p>
@@ -32,12 +32,12 @@
     </div>
   </a>
    <div class="team" id="team1">
-   <label class="teamTitre">Nom Team <br></label><input class="NomTeam" type="text"><br>
-   <label>Joueur 01  </label><input type="text"><br>
-   <label>Joueur 02  </label><input type="text"><br>
-   <label>Joueur 03  </label><input type="text"><br>
-   <label>Joueur 04  </label><input type="text"><br>
-   <label>Joueur 05  </label><input type="text"><br>
+   <label class="teamTitre">Nom Team <br></label><input class="NomTeam" type="text" id="team1Nom0"><br>
+   <label>Joueur 01  </label><input type="text" id="team1P010"><br>
+   <label>Joueur 02  </label><input type="text" id="team1P020"><br>
+   <label>Joueur 03  </label><input type="text" id="team1P030"><br>
+   <label>Joueur 04  </label><input type="text" id="team1P040"><br>
+   <label>Joueur 05  </label><input type="text" id="team1P050"><br>
     <p id="team1Nom"></p>
     <p id="team1P01"></p>
     <p id="team1P02"></p>
@@ -47,12 +47,12 @@
    <button onclick="ask1();">Jouer!</button>
  </div>
 <div class="team" id="team2">
-  <label class="teamTitre">Nom Team <br></label><input class="NomTeam" type="text"><br>
-  <label>Joueur 01  </label><input type="text"><br>
-  <label>Joueur 02  </label><input type="text"><br>
-  <label>Joueur 03  </label><input type="text"><br>
-  <label>Joueur 04  </label><input type="text"><br>
-  <label>Joueur 05  </label><input type="text"><br>
+  <label class="teamTitre">Nom Team <br></label><input class="NomTeam" type="text" id="team2Nom0"><br>
+  <label>Joueur 01  </label><input type="text" id="team2P010"><br>
+  <label>Joueur 02  </label><input type="text" id="team2P020"><br>
+  <label>Joueur 03  </label><input type="text" id="team2P030"><br>
+  <label>Joueur 04  </label><input type="text" id="team2P040"><br>
+  <label>Joueur 05  </label><input type="text" id="team2P040"><br>
    <p id="team2Nom">Blablala</p>
    <p id="team2P01"></p>
    <p id="team2P02">Lalalal</p>
@@ -111,6 +111,46 @@
 
 
   <script>
+  function ask1(){
+    var nomteam1 = document.getElementById('team1Nom0').value;
+    document.getElementById("team1Nom").innerHTML = nomteam1;
+
+    var nomteam1J01 = document.getElementById('team1P010').value;
+    document.getElementById("team1P01").innerHTML = nomteam1J01;
+
+    var nomteam1J02 = document.getElementById('team1P020').value;
+    document.getElementById("team1P02").innerHTML = nomteam1J02;
+
+    var nomteam1J03 = document.getElementById('team1P030').value;
+    document.getElementById("team1P03").innerHTML = nomteam1J03;
+
+    var nomteam1J04 = document.getElementById('team1P040').value;
+    document.getElementById("team1P04").innerHTML = nomteam1J04;
+
+    var nomteam1J05 = document.getElementById('team1P050').value;
+    document.getElementById("team1P05").innerHTML = nomteam1J05;
+  }
+
+  function ask2(){
+    var nomteam2 = document.getElementById('team2Nom0').value;
+    document.getElementById("team2Nom").innerHTML = nomteam2;
+
+    var nomteam2J01 = document.getElementById('team2P010').value;
+    document.getElementById("team2P01").innerHTML = nomteam2J01;
+
+    var nomteam2J02 = document.getElementById('team2P020').value;
+    document.getElementById("team2P02").innerHTML = nomteam2J02;
+
+    var nomteam2J03 = document.getElementById('team2P030').value;
+    document.getElementById("team2P03").innerHTML = nomteam2J03;
+
+    var nomteam2J04 = document.getElementById('team2P040').value;
+    document.getElementById("team2P04").innerHTML = nomteam2J04;
+
+    var nomteam2J05 = document.getElementById('team2P050').value;
+    document.getElementById("team2P05").innerHTML = nomteam2J05;
+  }
+
 
   </script>
 
