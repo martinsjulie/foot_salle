@@ -3,12 +3,13 @@
 
 <head>
 
-   <title>
-     Choose your Team!
-   </title>
-   <meta charset="utf-8">
-   <meta name="description" content="Intro JS" />
-   <link rel="stylesheet" type="text/css" href="foot_salle.css">
+  <title>
+    Choose your Team!
+  </title>
+  <meta charset="utf-8">
+  <meta name="description" content="Intro JS" />
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="foot_salle.css">
 </head>
 
 <body>
@@ -31,129 +32,176 @@
       <p>Check the Green Battlefiel!</p>
     </div>
   </a>
-   <div class="team" id="team1">
-   <label class="teamTitre">Nom Team <br></label><input class="NomTeam" type="text" id="team1Nom0"><br>
-   <label>Joueur 01  </label><input type="text" id="team1P010"><br>
-   <label>Joueur 02  </label><input type="text" id="team1P020"><br>
-   <label>Joueur 03  </label><input type="text" id="team1P030"><br>
-   <label>Joueur 04  </label><input type="text" id="team1P040"><br>
-   <label>Joueur 05  </label><input type="text" id="team1P050"><br>
-    <p id="team1Nom"></p>
-    <p id="team1P01"></p>
-    <p id="team1P02"></p>
-    <p id="team1P03"></p>
-    <p id="team1P04"></p>
-    <p id="team1P05"></p>
-   <button onclick="ask1();">Jouer!</button>
- </div>
-<div class="team" id="team2">
-  <label class="teamTitre">Nom Team <br></label><input class="NomTeam" type="text" id="team2Nom0"><br>
-  <label>Joueur 01  </label><input type="text" id="team2P010"><br>
-  <label>Joueur 02  </label><input type="text" id="team2P020"><br>
-  <label>Joueur 03  </label><input type="text" id="team2P030"><br>
-  <label>Joueur 04  </label><input type="text" id="team2P040"><br>
-  <label>Joueur 05  </label><input type="text" id="team2P040"><br>
-   <p id="team2Nom">Blablala</p>
-   <p id="team2P01"></p>
-   <p id="team2P02">Lalalal</p>
-   <p id="team2P03"></p>
-   <p id="team2P04"></p>
-   <p id="team2P05"></p>
-  <button onclick="ask2();">Jouer!</button>
-</div>
-<div class="team" id="team3">
-  <label class="teamTitre">Nom Team <br></label><input class="NomTeam" type="text"><br>
-  <label>Joueur 01  </label><input type="text"><br>
-  <label>Joueur 02  </label><input type="text"><br>
-  <label>Joueur 03  </label><input type="text"><br>
-  <label>Joueur 04  </label><input type="text"><br>
-  <label>Joueur 05  </label><input type="text"><br>
-   <p id="team3Nom">Blablala</p>
-   <p id="team3P01"></p>
-   <p id="team3P02">Lalalal</p>
-   <p id="team3P03"></p>
-   <p id="team3P04"></p>
-   <p id="team3P05"></p>
-  <button onclick="ask3();">Jouer!</button>
-</div>
-<div class="team" id="team4">
-  <label class="teamTitre">Nom Team <br></label><input class="NomTeam" type="text"><br>
-  <label>Joueur 01  </label><input type="text"><br>
-  <label>Joueur 02  </label><input type="text"><br>
-  <label>Joueur 03  </label><input type="text"><br>
-  <label>Joueur 04  </label><input type="text"><br>
-  <label>Joueur 05  </label><input type="text"><br>
-   <p id="team4Nom">Blablala</p>
-   <p id="team4P01"></p>
-   <p id="team4P02">Lalalal</p>
-   <p id="team4P03"></p>
-   <p id="team4P04"></p>
-   <p id="team4P05"></p>
-  <button onclick="ask4();">Jouer!</button>
-</div>
-<div class="team" id="team5">
-  <label class="teamTitre">Nom Team <br></label><input class="NomTeam" type="text"><br>
-  <label>Joueur 01  </label><input type="text"><br>
-  <label>Joueur 02  </label><input type="text"><br>
-  <label>Joueur 03  </label><input type="text"><br>
-  <label>Joueur 04  </label><input type="text"><br>
-  <label>Joueur 05  </label><input type="text"><br>
-   <p id="team5Nom">Blablala</p>
-   <p id="team5P01"></p>
-   <p id="team5P02">Lalalal</p>
-   <p id="team5P03"></p>
-   <p id="team5P04"></p>
-   <p id="team5P05"></p>
-  <button onclick="ask5();">Jouer!</button>
-</div>
+  <div class="team">
+    <label class="teamTitre" name="team1">Nom Team
+      <br>
+    </label>
+    <input id="inputTeam1" class="NomTeam" type="text" >
+    <br>
+    <label>Joueur 01 </label>
+    <input type="text" id="team1Player1Name">
+    <br>
+    <label>Joueur 02 </label>
+    <input type="text" id="team1Player2Name">
+    <br>
+    <label>Joueur 03 </label>
+    <input type="text" id="team1Player3Name">
+    <br>
+    <label>Joueur 04 </label>
+    <input type="text" id="team1Player4Name">
+    <br>
+    <label>Joueur 05 </label>
+    <input type="text" id="team1Player5Name">
+    <br>
+    <p id="team1Player1"></p>
+    <p id="team1Player2"></p>
+    <p id="team1Player3"></p>
+    <p id="team1Player4"></p>
+    <p id="team1Player5"></p>
+    <button onclick="add(1);">Jouer!</button>
+  </div>
+  <div class="team">
+    <label class="teamTitre" name="team2">Nom Team
+      <br>
+    </label>
+    <input class="NomTeam" type="text" id="inputTeam2">
+    <br>
+    <label>Joueur 01 </label>
+    <input type="text" id="team2Player1Name">
+    <br>
+    <label>Joueur 02 </label>
+    <input type="text" id="team2Player2Name">
+    <br>
+    <label>Joueur 03 </label>
+    <input type="text" id="team2Player3Name">
+    <br>
+    <label>Joueur 04 </label>
+    <input type="text" id="team2Player4Name">
+    <br>
+    <label>Joueur 05 </label>
+    <input type="text" id="team2Player5Name">
+    <br>
+    <p id="team2Player1"></p>
+    <p id="team2Player2"></p>
+    <p id="team2Player3"></p>
+    <p id="team2Player4"></p>
+    <p id="team2Player5"></p>
+    <button onclick="add(2);">Jouer!</button>
+  </div>
+  <div class="team">
+    <label class="teamTitre" name="team3" >Nom Team
+      <br>
+    </label>
+    <input class="NomTeam" type="text" id="inputTeam3">
+    <br>
+    <label>Joueur 01 </label>
+    <input type="text" id="team3Player1Name">
+    <br>
+    <label>Joueur 02 </label>
+    <input type="text" id="team3Player2Name">
+    <br>
+    <label>Joueur 03 </label>
+    <input type="text" id="team3Player3Name">
+    <br>
+    <label>Joueur 04 </label>
+    <input type="text" id="team3Player4Name">
+    <br>
+    <label>Joueur 05 </label>
+    <input type="text" id="team3Player5Name">
+    <br>
+    <p id="team3Player1"></p>
+    <p id="team3Player2"></p>
+    <p id="team3Player3"></p>
+    <p id="team3Player4"></p>
+    <p id="team3Player5"></p>
+    <button onclick="add(3);">Jouer!</button>
+  </div>
+  <div class="team">
+    <label class="teamTitre" name="team4">Nom Team
+      <br>
+    </label>
+    <input class="NomTeam" type="text" id="inputTeam4">
+    <br>
+    <label>Joueur 01 </label>
+    <input type="text" id="team4Player1Name">
+    <br>
+    <label>Joueur 02 </label>
+    <input type="text" id="team4Player2Name">
+    <br>
+    <label>Joueur 03 </label>
+    <input type="text" id="team4Player3Name">
+    <br>
+    <label>Joueur 04 </label>
+    <input type="text" id="team4Player4Name">
+    <br>
+    <label>Joueur 05 </label>
+    <input type="text" id="team4Player5Name">
+    <br>
+    <p id="team4Player1"></p>
+    <p id="team4Player2"></p>
+    <p id="team4Player3"></p>
+    <p id="team4Player4"></p>
+    <p id="team4Player5"></p>
+    <button onclick="add(4);">Jouer!</button>
+  </div>
 
+  <div class="team">
+    <label class="teamTitre" name="team5">Nom Team
+      <br>
+    </label>
+    <input class="NomTeam" type="text" id="inputTeam5">
+    <br>
+    <label>Joueur 01 </label>
+    <input type="text" id="team5Player1Name">
+    <br>
+    <label>Joueur 02 </label>
+    <input type="text" id="team5Player2Name">
+    <br>
+    <label>Joueur 03 </label>
+    <input type="text" id="team5Player3Name">
+    <br>
+    <label>Joueur 04 </label>
+    <input type="text" id="team5Player4Name">
+    <br>
+    <label>Joueur 05 </label>
+    <input type="text" id="team5Player5Name">
+    <br>
+    <p id="team5Player1"></p>
+    <p id="team5Player2"></p>
+    <p id="team5Player3"></p>
+    <p id="team5Player4"></p>
+    <p id="team5Player5"></p>
+    <button onclick="add(5);">Jouer!</button>
+  </div>
 
-
-
-  <script>
-  function ask1(){
-    var nomteam1 = document.getElementById('team1Nom0').value;
-    document.getElementById("team1Nom").innerHTML = nomteam1;
-
-    var nomteam1J01 = document.getElementById('team1P010').value;
-    document.getElementById("team1P01").innerHTML = nomteam1J01;
-
-    var nomteam1J02 = document.getElementById('team1P020').value;
-    document.getElementById("team1P02").innerHTML = nomteam1J02;
-
-    var nomteam1J03 = document.getElementById('team1P030').value;
-    document.getElementById("team1P03").innerHTML = nomteam1J03;
-
-    var nomteam1J04 = document.getElementById('team1P040').value;
-    document.getElementById("team1P04").innerHTML = nomteam1J04;
-
-    var nomteam1J05 = document.getElementById('team1P050').value;
-    document.getElementById("team1P05").innerHTML = nomteam1J05;
-  }
-
-  function ask2(){
-    var nomteam2 = document.getElementById('team2Nom0').value;
-    document.getElementById("team2Nom").innerHTML = nomteam2;
-
-    var nomteam2J01 = document.getElementById('team2P010').value;
-    document.getElementById("team2P01").innerHTML = nomteam2J01;
-
-    var nomteam2J02 = document.getElementById('team2P020').value;
-    document.getElementById("team2P02").innerHTML = nomteam2J02;
-
-    var nomteam2J03 = document.getElementById('team2P030').value;
-    document.getElementById("team2P03").innerHTML = nomteam2J03;
-
-    var nomteam2J04 = document.getElementById('team2P040').value;
-    document.getElementById("team2P04").innerHTML = nomteam2J04;
-
-    var nomteam2J05 = document.getElementById('team2P050').value;
-    document.getElementById("team2P05").innerHTML = nomteam2J05;
-  }
-
-
-  </script>
-
+  <div class="team">
+    <label class="teamTitre" name="team6">Nom Team
+      <br>
+    </label>
+    <input class="NomTeam" type="text" id="inputTeam6">
+    <br>
+    <label>Joueur 01 </label>
+    <input type="text" id="team6Player1Name">
+    <br>
+    <label>Joueur 02 </label>
+    <input type="text" id="team6Player2Name">
+    <br>
+    <label>Joueur 03 </label>
+    <input type="text" id="team6Player3Name">
+    <br>
+    <label>Joueur 04 </label>
+    <input type="text" id="team6Player4Name">
+    <br>
+    <label>Joueur 05 </label>
+    <input type="text" id="team6Player5Name">
+    <br>
+    <p id="team6Player1"></p>
+    <p id="team6Player2"></p>
+    <p id="team6Player3"></p>
+    <p id="team6Player4"></p>
+    <p id="team6Player5"></p>
+    <button onclick="add(5);">Jouer!</button>
+  </div>
 </body>
 
 </html>
