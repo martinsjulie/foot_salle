@@ -8,11 +8,10 @@
   </title>
   <meta charset="utf-8">
   <meta name="description" content="Intro JS" />
-  <script type="text/javascript" src="main.js"></script>
   <link rel="stylesheet" type="text/css" href="foot_salle.css">
 </head>
+<body >
 
-<body>
   <div class="en_tete">
     <h1>TEAM TIME!</h1>
   </div>
@@ -33,7 +32,7 @@
     </div>
   </a>
   <div class="team">
-    <label class="teamTitre" name="team1">Nom Team
+    <label class="teamTitre" id="team1">Nom Team
       <br>
     </label>
     <input id="inputTeam1" class="NomTeam" type="text" >
@@ -61,7 +60,7 @@
     <button onclick="add(1);">Jouer!</button>
   </div>
   <div class="team">
-    <label class="teamTitre" name="team2">Nom Team
+    <label class="teamTitre" id="team2">Nom Team
       <br>
     </label>
     <input class="NomTeam" type="text" id="inputTeam2">
@@ -89,7 +88,7 @@
     <button onclick="add(2);">Jouer!</button>
   </div>
   <div class="team">
-    <label class="teamTitre" name="team3" >Nom Team
+    <label class="teamTitre" id="team3" >Nom Team
       <br>
     </label>
     <input class="NomTeam" type="text" id="inputTeam3">
@@ -117,8 +116,9 @@
     <button onclick="add(3);">Jouer!</button>
   </div>
   <div class="team">
-    <label class="teamTitre" name="team4">Nom Team
+    <label class="teamTitre" id="team4">Nom Team
       <br>
+
     </label>
     <input class="NomTeam" type="text" id="inputTeam4">
     <br>
@@ -146,7 +146,7 @@
   </div>
 
   <div class="team">
-    <label class="teamTitre" name="team5">Nom Team
+    <label class="teamTitre" id="team5">Nom Team
       <br>
     </label>
     <input class="NomTeam" type="text" id="inputTeam5">
@@ -175,7 +175,7 @@
   </div>
 
   <div class="team">
-    <label class="teamTitre" name="team6">Nom Team
+    <label class="teamTitre" id="team6">Nom Team
       <br>
     </label>
     <input class="NomTeam" type="text" id="inputTeam6">
@@ -200,8 +200,10 @@
     <p id="team6Player3"></p>
     <p id="team6Player4"></p>
     <p id="team6Player5"></p>
-    <button onclick="add(5);">Jouer!</button>
+    <button onclick="add(6);">Jouer!</button>
   </div>
+  <script type="text/javascript" src="main.js"></script>
+
 </body>
 
 </html>
